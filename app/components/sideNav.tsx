@@ -9,25 +9,10 @@ const links = [
     icon: <IoHomeOutline size={20} />
   },
   {
-    name: "Ver Usuarios",
-    href: "/dashboard/viewusers",
+    name: "Usuarios",
+    href: "/dashboard/users",
     icon: <IoPeopleOutline size={20} />
   },
-  {
-    name: "Agregar Usuario",
-    href: "/dashboard/createuser",
-    icon: <IoPersonAddOutline size={20} />
-  },
-  {
-    name: "Actualizar Usuario",
-    href: "/dashboard/updateuser",
-    icon: <IoCreateOutline size={20} />
-  },
-  {
-    name: "Eliminar Usuario",
-    href: "/dashboard/deleteuser",
-    icon: <IoTrashOutline size={20} />
-  }
 ];
 
 export default function SideNav() {
