@@ -33,10 +33,7 @@ export default function DeleteUser({ users, fetchUsers }: DeleteUserProps) {
   };
 
   return (
-    <div className="w-full max-w-2xl bg-black/40 rounded-xl shadow-lg p-6">
-      <h2 className="text-2xl font-bold text-white mb-4 text-left">
-        Usuarios registrados
-      </h2>
+    <div className="w-full max-w-2xl rounded-xl shadow-lg p-6">
       {message && (
         <div className="text-center text-white mb-2">{message}</div>
       )}
