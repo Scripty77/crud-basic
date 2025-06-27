@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 
   if (email === Default_user.email && password === Default_user.password) {
     await createSession();
-    const { password, ...userWithoutPassword } = Default_user;
+    const { password: _, ...userWithoutPassword } = Default_user;
     return NextResponse.json({ message: 'Login exitoso', user: userWithoutPassword });
   } else {
     return NextResponse.json({ message: 'Credenciales inválidas.' }, { status: 401 });

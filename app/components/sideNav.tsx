@@ -1,5 +1,5 @@
 import React from "react";
-import { IoHomeOutline, IoPersonAddOutline, IoCreateOutline, IoTrashOutline, IoPeopleOutline } from "react-icons/io5";
+import { IoHomeOutline,IoPeopleOutline } from "react-icons/io5";
 import { IoIosContact } from "react-icons/io";
 
 const links = [

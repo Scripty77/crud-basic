@@ -23,7 +23,7 @@ export async function verifySession(): Promise<{ id: string; email: string; name
   const sessionCookie = (await cookies()).get(Cookie_Name)?.value;
   if (!sessionCookie) return null;
   if (sessionCookie === Default_user.id) {
-    const { password, ...userWithoutPassword } = Default_user;
+    const { password: _, ...userWithoutPassword } = Default_user;
     return userWithoutPassword;
   }
   return null;

@@ -54,6 +54,6 @@ export async function DELETE(request: Request) {
 
     return NextResponse.json(deletedUser, { status: 200 });
   } catch (e) {
-    return NextResponse.json({ error: "Error al eliminar usuario" }, { status: 500 });
+    return NextResponse.json({e}, { status: 500 });
   }
 }
